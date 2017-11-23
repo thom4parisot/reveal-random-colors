@@ -1,6 +1,6 @@
 {
   "name": "reveal-random-colors",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "Pimp your Reveal.js presentations by randomising the colours and fonts of the current slide.",
   "main": "index.js",
   "scripts": {
