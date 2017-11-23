@@ -1,0 +1,26 @@
+{
+  "name": "reveal-random-colors",
+  "version": "1.0.0",
+  "description": "Pimp your Reveal.js presentations by randomising the colours and fonts of the current slide.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oncletom/reveal-random-colors.git"
+  },
+  "keywords": [
+    "reveal.js",
+    "plugin",
+    "random",
+    "colors",
+    "palette"
+  ],
+  "author": "Thomas Parisot (https://oncletom.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oncletom/reveal-random-colors/issues"
+  },
+  "homepage": "https://github.com/oncletom/reveal-random-colors#readme"
+}
