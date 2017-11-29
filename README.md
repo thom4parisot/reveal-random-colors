@@ -2,6 +2,8 @@
 
 > Pimp your Reveal.js presentations by randomising slide colours and typeface.
 
+![demonstration in a browser](demo.gif)
+
 Add `data-state="random-color"` in [slide attributes][]. This slide `font-family`, `color` and `background-color` will be randomised when it becomes active.
 
 The **default colors list** is based on [tachyons accessible combinations][] (contrast ratio > 7). Feel free to expand it 👍.
