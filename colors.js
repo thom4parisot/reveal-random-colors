@@ -1,4 +1,4 @@
-export default const colors = [
+module.exports = [
   ['#FFDFDF', '#00449E'],
   ['#000000', '#FFFF00'],
   ['#FFFF00', '#5E2CA5'],

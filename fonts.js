@@ -1,4 +1,4 @@
-export default const fonts = [
+module.exports = [
   "American Typewriter",
   "Andalé Mono",
   "Apple Chancery",
