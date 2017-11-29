@@ -1,8 +1,12 @@
 # reveal-random-colors
 
-> Pimp your Reveal.js presentations by randomising the colours and fonts of the current slide.
+> Pimp your Reveal.js presentations by randomising slide colours and typeface.
 
-Simply add a `data-state="random-color"` in a `.slide` metadata section to randomise the colors of this slide when it becomes active.
+Add `data-state="random-color"` in [slide attributes][]. This slide `font-family`, `color` and `background-color` will be randomised when it becomes active.
+
+The **default colors list** is based on [tachyons accessible combinations][] (contrast ratio > 7). Feel free to expand it 👍.
+
+The **default fonts list** is based on [macOS_ typefaces][]. Not because I hate other OSes but because it was my use case for a live presentations. Ides are welcome 😊.
 
 # Install
 
@@ -12,11 +16,16 @@ $ npm install reveal-random-colors
 
 # Use
 
-## Reveal Configuration
+## Reveal.js Configuration
 
 ```js
 import Reveal from 'reveal.js';
 import RandomColors from 'reveal-random-colors';
+
+
+Reveal.initialize({
+  // ... cf. https://npmjs.com/reveal.js#configuration
+});
 
 Reveal.addEventListener('slidechanged', RandomColors());
 ```
@@ -44,6 +53,26 @@ The following rules will help cascade the random font to headlines and paragraph
 }
 ```
 
+## Using different fonts
+
+Specify an _array of typefaces_ to the plugin via the `fonts` option:
+
+```js
+const myFonts = [
+  'Comic Sans',
+  'Ubuntu, sans-serif',
+  'Open Sans, sans-serif',
+];
+
+Reveal.addEventListener('slidechanged', RandomColors({
+  fonts: myFonts
+}));
+```
+
 # License
 
 [MIT License](LICENSE).
+
+[slide attributes]: https://github.com/hakimel/reveal.js/#slide-attributes
+[tachyons accessible combinations]: http://tachyons.io/docs/themes/skins/
+[macOS_ typefaces]: https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS
