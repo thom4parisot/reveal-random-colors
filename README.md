@@ -24,12 +24,11 @@ $ npm install reveal-random-colors
 import Reveal from 'reveal.js';
 import RandomColors from 'reveal-random-colors';
 
+Reveal.registerPlugin('RandomColors', RandomColors());
 
 Reveal.initialize({
   // ... cf. https://npmjs.com/reveal.js#configuration
 });
-
-Reveal.addEventListener('slidechanged', RandomColors());
 ```
 
 In a Reveal.js slide:
@@ -66,7 +65,7 @@ const myFonts = [
   'Open Sans, sans-serif',
 ];
 
-Reveal.addEventListener('slidechanged', RandomColors({
+Reveal.registerPlugin('RandomColors', RandomColors({
   fonts: myFonts
 }));
 ```
