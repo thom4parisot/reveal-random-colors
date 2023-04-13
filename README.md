@@ -76,4 +76,4 @@ Reveal.registerPlugin('RandomColors', RandomColors({
 
 [slide attributes]: https://github.com/hakimel/reveal.js/#slide-attributes
 [tachyons accessible combinations]: http://tachyons.io/docs/themes/skins/
-[macOS_ typefaces]: https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS
+[macOS_ typefaces]: https://stackoverflow.com/a/62755574/103396
